@@ -1,93 +1,169 @@
 function Hab() {
   return (
-    // Separador de contenido Habilidades
-    <div className="flex flex-col items-center">
-      {/* Contenedor del título con líneas */}
-      <div className="flex items-center w-full max-w-5xl">
-        {/* Línea izquierda (degradado de transparente a blanco) */}
+    // Separador de contenido Habilidades con padding responsivo
+    <div className="flex flex-col items-center px-4 py-10 w-full">
+      {/* Contenedor del título con líneas (Mejorado para móviles) */}
+      <div className="flex items-center w-full max-w-5xl mb-6">
+        {/* Línea izquierda */}
         <div className="flex-1 h-px bg-linear-to-r from-transparent to-slate-500"></div>
 
-        {/* Texto Central */}
-        <h2 className="mx-8 text-4xl text-white tracking-[0.3em] font-light uppercase">
+        {/* Texto Central Responsivo */}
+        <h2 className="mx-4 md:mx-8 text-2xl md:text-4xl text-white tracking-[0.2em] md:tracking-[0.3em] font-light uppercase text-center">
           Habilidades
         </h2>
 
-        {/* Línea derecha (degradado de blanco a transparente) */}
+        {/* Línea derecha */}
         <div className="flex-1 h-px bg-linear-to-l from-transparent to-slate-500"></div>
       </div>
 
-      {/* Habilidades */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl p-10 md:p-20">
-        {/* Habilidades Duras */}
-        <div className="flex flex-col items-center border border-slate-600 rounded-xl">
-          <h1 className="flex justify-center text-4xl  text-slate-300 font-light pb-10 pt-10 bg-slate-900 w-full rounded-t-xl">
+      {/* Contenedor de Bloques Habilidades */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full max-w-6xl p-4 md:p-10">
+        {/* Habilidades Duras (Tecnologías) */}
+        <div className="flex flex-col items-center border border-slate-600 rounded-xl bg-slate-900/50 w-full overflow-hidden">
+          <h1 className="flex justify-center text-2xl md:text-4xl text-slate-300 font-light py-6 md:py-10 bg-slate-900 w-full text-center border-b border-slate-600">
             Tecnologías
           </h1>
-          <div className="grid grid-cols-3 text-xl gap-20 p-10 text-white font-light bg-slate-900/50 rounded-b-xl">
-            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="c++.svg" alt="Logo" className="h-15 w-15" />
-              <p>C++</p>
+          {/* Grilla: 2 columnas en móviles, 3 en pantallas medianas en adelante */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-12 p-6 md:p-10 text-white font-light w-full justify-items-center">
+            <span className="flex flex-col items-center gap-2 hover:scale-110 md:hover:scale-125 transition-all cursor-pointer text-center">
+              <img
+                src="c++.svg"
+                alt="C++"
+                className="h-12 w-12 md:h-15 md:w-15 object-contain"
+              />
+              <p className="text-sm md:text-base mt-1">C++</p>
             </span>
-            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="HTML.svg" alt="Logo" className="h-15 w-15" />
-              <p>HTML</p>
+            <span className="flex flex-col items-center gap-2 hover:scale-110 md:hover:scale-125 transition-all cursor-pointer text-center">
+              <img
+                src="HTML.svg"
+                alt="HTML"
+                className="h-12 w-12 md:h-15 md:w-15 object-contain"
+              />
+              <p className="text-sm md:text-base mt-1">HTML</p>
             </span>
-            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="CSS.svg" alt="Logo" className="h-15 w-15" />
-              <p>CSS</p>
+            <span className="flex flex-col items-center gap-2 hover:scale-110 md:hover:scale-125 transition-all cursor-pointer text-center">
+              <img
+                src="CSS.svg"
+                alt="CSS"
+                className="h-12 w-12 md:h-15 md:w-15 object-contain"
+              />
+              <p className="text-sm md:text-base mt-1">CSS</p>
             </span>
-            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="git.svg" alt="Logo" className="h-15 w-15" />
-              <p>Git/GitHub</p>
+            <span className="flex flex-col items-center gap-2 hover:scale-110 md:hover:scale-125 transition-all cursor-pointer text-center">
+              <img
+                src="git.svg"
+                alt="Git"
+                className="h-12 w-12 md:h-15 md:w-15 object-contain"
+              />
+              <p className="text-sm md:text-base mt-1 wrap-break-word max-w-25">
+                Git/GitHub
+              </p>
             </span>
-            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="react.png" alt="Logo" className="h-15 w-15" />
-              <p>React</p>
+            <span className="flex flex-col items-center gap-2 hover:scale-110 md:hover:scale-125 transition-all cursor-pointer text-center">
+              <img
+                src="react.png"
+                alt="React"
+                className="h-12 w-12 md:h-15 md:w-15 object-contain"
+              />
+              <p className="text-sm md:text-base mt-1">React</p>
             </span>
-            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="tailwind.svg" alt="Logo" className="h-15 w-15" />
-              <p>TailwindCSS</p>
+            <span className="flex flex-col items-center gap-2 hover:scale-110 md:hover:scale-125 transition-all cursor-pointer text-center">
+              <img
+                src="tailwind.svg"
+                alt="Tailwind"
+                className="h-12 w-12 md:h-15 md:w-15 object-contain"
+              />
+              <p className="text-sm md:text-base mt-1 wrap-break-word max-w-25">
+                TailwindCSS
+              </p>
             </span>
-            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="java.svg" alt="Logo" className="h-15 w-15" />
-              <p>Java(curso)</p>
+            <span className="flex flex-col items-center gap-2 hover:scale-110 md:hover:scale-125 transition-all cursor-pointer text-center">
+              <img
+                src="java.svg"
+                alt="Java"
+                className="h-12 w-12 md:h-15 md:w-15 object-contain"
+              />
+              <p className="text-sm md:text-base mt-1 wrap-break-word max-w-25">
+                Java(curso)
+              </p>
             </span>
-            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="vscode.svg" alt="Logo" className="h-15 w-15" />
-              <p>VScode</p>
+            <span className="flex flex-col items-center gap-2 hover:scale-110 md:hover:scale-125 transition-all cursor-pointer text-center">
+              <img
+                src="vscode.svg"
+                alt="VScode"
+                className="h-12 w-12 md:h-15 md:w-15 object-contain"
+              />
+              <p className="text-sm md:text-base mt-1">VScode</p>
             </span>
           </div>
         </div>
 
-        {/* Habilidades Blandas */}
-        <div className="flex flex-col items-center border border-slate-600 rounded-xl bg-slate-900/50 rounded-b-xl">
-          <h1 className="flex justify-center text-4xl text-slate-300 font-light pb-10 pt-10 bg-slate-900 w-full rounded-t-xl">
+        {/* Habilidades Blandas (Personales) */}
+        <div className="flex flex-col items-center border border-slate-600 rounded-xl bg-slate-900/50 w-full overflow-hidden">
+          <h1 className="flex justify-center text-2xl md:text-4xl text-slate-300 font-light py-6 md:py-10 bg-slate-900 w-full text-center border-b border-slate-600">
             Habilidades Personales
           </h1>
-          <div className="grid grid-cols-3 gap-20 p-10 text-white font-light text-center ">
-            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="Comunicacion.png" alt="Logo" className="h-15 w-15" />
-              <p>Comunicación efectiva con personas no técnicas</p>
+          {/* Grilla balanceada para textos largos */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-12 p-6 md:p-10 text-white font-light w-full justify-items-center">
+            <span className="flex flex-col items-center gap-2 hover:scale-110 md:hover:scale-125 transition-all cursor-pointer text-center max-w-30">
+              <img
+                src="Comunicacion.png"
+                alt="Comunicación"
+                className="h-12 w-12 md:h-15 md:w-15 object-contain"
+              />
+              <p className="text-xs md:text-sm mt-1 leading-tight">
+                Comunicación efectiva con personas no técnicas
+              </p>
             </span>
-            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="engranaje.png" alt="Logo" className="h-15 w-15" />
-              <p>Resolución de Problemas</p>
+            <span className="flex flex-col items-center gap-2 hover:scale-110 md:hover:scale-125 transition-all cursor-pointer text-center max-w-30">
+              <img
+                src="engranaje.png"
+                alt="Resolución"
+                className="h-12 w-12 md:h-15 md:w-15 object-contain"
+              />
+              <p className="text-xs md:text-sm mt-1 leading-tight">
+                Resolución de Problemas
+              </p>
             </span>
-            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="libro.png" alt="Logo" className="h-15 w-15" />
-              <p>Aprendizaje Rápido / Autodidacta</p>
+            <span className="flex flex-col items-center gap-2 hover:scale-110 md:hover:scale-125 transition-all cursor-pointer text-center max-w-30">
+              <img
+                src="libro.png"
+                alt="Aprendizaje"
+                className="h-12 w-12 md:h-15 md:w-15 object-contain"
+              />
+              <p className="text-xs md:text-sm mt-1 leading-tight">
+                Aprendizaje Rápido / Autodidacta
+              </p>
             </span>
-            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="equipo.png" alt="Logo" className="h-15 w-15" />
-              <p>Trabajo en Equipo</p>
+            <span className="flex flex-col items-center gap-2 hover:scale-110 md:hover:scale-125 transition-all cursor-pointer text-center max-w-30">
+              <img
+                src="equipo.png"
+                alt="Equipo"
+                className="h-12 w-12 md:h-15 md:w-15 object-contain"
+              />
+              <p className="text-xs md:text-sm mt-1 leading-tight">
+                Trabajo en Equipo
+              </p>
             </span>
-            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="camaleon.png" alt="Logo" className="h-15 w-15" />
-              <p>Adaptabilidad rápida</p>
+            <span className="flex flex-col items-center gap-2 hover:scale-110 md:hover:scale-125 transition-all cursor-pointer text-center max-w-30">
+              <img
+                src="camaleon.png"
+                alt="Adaptabilidad"
+                className="h-12 w-12 md:h-15 md:w-15 object-contain"
+              />
+              <p className="text-xs md:text-sm mt-1 leading-tight">
+                Adaptabilidad rápida
+              </p>
             </span>
-            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="tareas.png" alt="Logo" className="h-15 w-15" />
-              <p>Organización de tareas</p>
+            <span className="flex flex-col items-center gap-2 hover:scale-110 md:hover:scale-125 transition-all cursor-pointer text-center max-w-30">
+              <img
+                src="tareas.png"
+                alt="Tareas"
+                className="h-12 w-12 md:h-15 md:w-15 object-contain"
+              />
+              <p className="text-xs md:text-sm mt-1 leading-tight">
+                Organización de tareas
+              </p>
             </span>
           </div>
         </div>

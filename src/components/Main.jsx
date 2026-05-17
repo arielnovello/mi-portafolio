@@ -26,16 +26,28 @@ function Main() {
         </div>
         {/* Redes sociales */}
         <div className="flex gap-5 mt-8 justify-center items-center">
-          <img
-            src="github.svg"
-            alt="GitHub"
-            className="h-12 w-12 hover:scale-125 transition-all cursor-pointer"
-          />
-          <img
-            src="linkedin.svg"
-            alt="LinkedIn"
-            className="h-12 w-12 hover:scale-125 transition-all cursor-pointer"
-          />
+          <a
+            href="https://github.com/arielnovello"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="github.svg"
+              alt="GitHub"
+              className="h-12 w-12 hover:scale-125 transition-all cursor-pointer"
+            />
+          </a>
+          <a
+            href="https://linkedin.com/in/arielnovello"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="linkedin.svg"
+              alt="LinkedIn"
+              className="h-12 w-12 hover:scale-125 transition-all cursor-pointer"
+            />
+          </a>
           <a
             href="cv_arielnovello.pdf"
             download="cv_arielnovello.pdf"
