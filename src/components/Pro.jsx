@@ -33,7 +33,7 @@ function Pro() {
             <p className="text-white mb-6 text-center md:text-left">
               Software desarrollado en C++ para la administración de equipos.
               Implementa <strong>persistencia de datos en archivos</strong>,
-              control de préstamos en tiempo real y validaciones robustas para
+              control de préstamos en tiempo real y validaciones lógicas para
               asegurar la integridad de la información.
             </p>
             <div className="flex gap-2 flex-wrap justify-center md:justify-start">
@@ -50,7 +50,9 @@ function Pro() {
             {/* Botón para ver código en GitHub */}
             <div className="flex gap-4 mt-8 justify-center md:justify-start">
               <a
-                href="#"
+                href="https://github.com/arielnovello/tp-prestacion-netbooks"
+                target="_blank"
+                rel="noreferrer"
                 className="bg-white text-black px-6 py-2 rounded-lg font-bold hover:scale-105 transition-all"
               >
                 Ver Código en GitHub

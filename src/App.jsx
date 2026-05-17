@@ -11,13 +11,13 @@ function App() {
       <section id="inicio">
         <Main />
       </section>
-      <section id="habilidades">
+      <section id="habilidades" className="scroll-mt-20">
         <Hab />
       </section>
-      <section id="proyectos">
+      <section id="proyectos" className="scroll-mt-20">
         <Pro />
       </section>
-      <section id="contacto">
+      <section id="contacto" className="scroll-mt-20">
         <Cont />
       </section>
     </div>

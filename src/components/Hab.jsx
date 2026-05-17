@@ -19,11 +19,11 @@ function Hab() {
       {/* Habilidades */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl p-10 md:p-20">
         {/* Habilidades Duras */}
-        <div className="flex flex-col items-center">
-          <h1 className="flex justify-center text-3xl  text-slate-300 font-light">
-            Habilidades Duras
+        <div className="flex flex-col items-center border border-slate-600 rounded-xl">
+          <h1 className="flex justify-center text-4xl  text-slate-300 font-light pb-10 pt-10 bg-slate-900 w-full rounded-t-xl">
+            Tecnologías
           </h1>
-          <div className="grid grid-cols-3 text-xl gap-20 p-10 text-white font-light">
+          <div className="grid grid-cols-3 text-xl gap-20 p-10 text-white font-light bg-slate-900/50 rounded-b-xl">
             <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
               <img src="c++.svg" alt="Logo" className="h-15 w-15" />
               <p>C++</p>
@@ -37,49 +37,57 @@ function Hab() {
               <p>CSS</p>
             </span>
             <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="CSS.svg" alt="Logo" className="h-15 w-15" />
-              <p>CSS</p>
+              <img src="git.svg" alt="Logo" className="h-15 w-15" />
+              <p>Git/GitHub</p>
             </span>
             <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="CSS.svg" alt="Logo" className="h-15 w-15" />
-              <p>CSS</p>
+              <img src="react.png" alt="Logo" className="h-15 w-15" />
+              <p>React</p>
             </span>
             <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="CSS.svg" alt="Logo" className="h-15 w-15" />
-              <p>CSS</p>
+              <img src="tailwind.svg" alt="Logo" className="h-15 w-15" />
+              <p>TailwindCSS</p>
+            </span>
+            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
+              <img src="java.svg" alt="Logo" className="h-15 w-15" />
+              <p>Java(curso)</p>
+            </span>
+            <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
+              <img src="vscode.svg" alt="Logo" className="h-15 w-15" />
+              <p>VScode</p>
             </span>
           </div>
         </div>
 
         {/* Habilidades Blandas */}
-        <div className="flex flex-col items-center">
-          <h1 className="flex justify-center text-3xl text-slate-300 font-light">
-            Habilidades Blandas
+        <div className="flex flex-col items-center border border-slate-600 rounded-xl bg-slate-900/50 rounded-b-xl">
+          <h1 className="flex justify-center text-4xl text-slate-300 font-light pb-10 pt-10 bg-slate-900 w-full rounded-t-xl">
+            Habilidades Personales
           </h1>
-          <div className="grid grid-cols-2 md:grid-cols-3 text-sm gap-20 p-10 text-white font-light text-center">
+          <div className="grid grid-cols-3 gap-20 p-10 text-white font-light text-center ">
             <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
               <img src="Comunicacion.png" alt="Logo" className="h-15 w-15" />
               <p>Comunicación efectiva con personas no técnicas</p>
             </span>
             <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="HTML.svg" alt="Logo" className="h-15 w-15" />
-              <p>HTML</p>
+              <img src="engranaje.png" alt="Logo" className="h-15 w-15" />
+              <p>Resolución de Problemas</p>
             </span>
             <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="CSS.svg" alt="Logo" className="h-15 w-15" />
-              <p>CSS</p>
+              <img src="libro.png" alt="Logo" className="h-15 w-15" />
+              <p>Aprendizaje Rápido / Autodidacta</p>
             </span>
             <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="CSS.svg" alt="Logo" className="h-15 w-15" />
-              <p>CSS</p>
+              <img src="equipo.png" alt="Logo" className="h-15 w-15" />
+              <p>Trabajo en Equipo</p>
             </span>
             <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="CSS.svg" alt="Logo" className="h-15 w-15" />
-              <p>CSS</p>
+              <img src="camaleon.png" alt="Logo" className="h-15 w-15" />
+              <p>Adaptabilidad rápida</p>
             </span>
             <span className="flex flex-col items-center gap-2 hover:scale-125 transition-all cursor-pointer">
-              <img src="CSS.svg" alt="Logo" className="h-15 w-15" />
-              <p>CSS</p>
+              <img src="tareas.png" alt="Logo" className="h-15 w-15" />
+              <p>Organización de tareas</p>
             </span>
           </div>
         </div>

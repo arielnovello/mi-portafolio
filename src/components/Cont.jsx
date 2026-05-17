@@ -26,25 +26,48 @@ function Cont() {
           <div className="flex flex-col items-start gap-5 px-5">
             <div className="flex gap-5 hover:text-blue-400 cursor-pointer">
               📧
-              <p>arielnovello1@gmail.com</p>
+              <a
+                href="mailto:arielnovello1@gmail.com"
+                className="hover:underline"
+              >
+                arielnovello1@gmail.com
+              </a>
             </div>
             <div className="flex gap-5 hover:text-blue-400 cursor-pointer">
               🔗
-              <a href="#">LinkedIn /tu-perfil</a>
+              <a
+                href="https://www.linkedin.com/in/arielnovello"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Conectemos en LinkedIn
+              </a>
             </div>
             <div className="flex gap-5 hover:text-blue-400 cursor-pointer">
               💻
-              <a href="#">GitHub /tu-usuario</a>
+              <a
+                href="https://github.com/arielnovello"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visita mi GitHub
+              </a>
             </div>
           </div>
         </div>
 
         {/* Formulario de contacto (Original e intacto) */}
-        <form className="bg-slate-900/50 p-10 border border-slate-700 rounded-2xl">
+        <form
+          action="https://formspree.io/f/xlgvrdvr"
+          method="POST"
+          className="bg-slate-900/50 p-10 border border-slate-700 rounded-2xl"
+        >
           <label className="text-slate-400 text-sm tracking-widest">
             NOMBRE
             <input
               type="text"
+              name="name"
+              required
               placeholder="Tu nombre"
               className="bg-slate-800 border py-3 px-4 border-slate-700 w-full rounded-lg text-white focus:outline-none focus:ring-1 focus:ring-slate-500 mt-2 mb-5"
             />
@@ -53,6 +76,8 @@ function Cont() {
             EMAIL
             <input
               type="email"
+              name="email"
+              required
               placeholder="correo@ejemplo.com"
               className="bg-slate-800 border py-3 px-4 border-slate-700 w-full rounded-lg text-white focus:outline-none focus:ring-1 focus:ring-slate-500 mt-2 mb-5"
             />
@@ -61,6 +86,8 @@ function Cont() {
             MENSAJE
             <textarea
               rows="4"
+              name="message"
+              required
               placeholder="¿En que puedo ayudarte?"
               className="bg-slate-800 border py-3 px-4 border-slate-700 w-full rounded-lg text-white focus:outline-none focus:ring-1 focus:ring-slate-500 mt-2"
             />
