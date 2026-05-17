@@ -1,28 +1,30 @@
 function Cont() {
   return (
-    // Separador de contenido Contacto
-    <div className="flex flex-col items-center">
-      {/* Contenedor del título con líneas */}
-      <div className="flex items-center w-full max-w-5xl">
+    // Separador de contenido Contacto con padding responsivo
+    <div className="flex flex-col items-center px-4 py-10 w-full">
+      {/* Contenedor del título con líneas (Optimizado para móviles) */}
+      <div className="flex items-center w-full max-w-5xl mb-6">
+        {/* Línea izquierda */}
         <div className="flex-1 h-px bg-linear-to-r from-transparent to-slate-500"></div>
 
-        {/* Texto Central */}
-        <h2 className="mx-8 text-4xl text-white tracking-[0.3em] font-light uppercase">
+        {/* Texto Central Responsivo */}
+        <h2 className="mx-4 md:mx-8 text-2xl md:text-4xl text-white tracking-[0.2em] md:tracking-[0.3em] font-light uppercase text-center">
           Contacto
         </h2>
 
+        {/* Línea derecha */}
         <div className="flex-1 h-px bg-linear-to-l from-transparent to-slate-500"></div>
       </div>
 
-      {/* Contenedor de contacto (Grid 50/50 original, alineado arriba en PC) */}
-      <div className="p-10 md:p-20 max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 text-white">
+      {/* Contenedor de contacto (Grid responsivo) */}
+      <div className="p-4 md:p-20 max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 text-white">
         {/* LADO IZQUIERDO: Centrado en celular, vuelve a la izquierda y arriba en PC */}
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-2xl font-semibold mb-6 px-5 text-center md:text-left text-slate-300">
             Información de Contacto
           </h3>
 
-          {/* Mantiene los iconos alineados verticalmente entre sí */}
+          {/* Iconos alineados verticalmente */}
           <div className="flex flex-col items-start gap-5 px-5">
             <div className="flex gap-5 hover:text-blue-400 cursor-pointer">
               📧
@@ -56,13 +58,13 @@ function Cont() {
           </div>
         </div>
 
-        {/* Formulario de contacto (Original e intacto) */}
+        {/* Formulario de contacto (Estilo consistente) */}
         <form
           action="https://formspree.io/f/xlgvrdvr"
           method="POST"
-          className="bg-slate-900/50 p-10 border border-slate-700 rounded-2xl"
+          className="bg-slate-900/50 p-6 md:p-10 border border-slate-700 rounded-2xl w-full"
         >
-          <label className="text-slate-400 text-sm tracking-widest">
+          <label className="text-slate-400 text-sm tracking-widest block">
             NOMBRE
             <input
               type="text"
@@ -72,7 +74,7 @@ function Cont() {
               className="bg-slate-800 border py-3 px-4 border-slate-700 w-full rounded-lg text-white focus:outline-none focus:ring-1 focus:ring-slate-500 mt-2 mb-5"
             />
           </label>
-          <label className="text-slate-400 text-sm tracking-widest">
+          <label className="text-slate-400 text-sm tracking-widest block">
             EMAIL
             <input
               type="email"
@@ -82,13 +84,13 @@ function Cont() {
               className="bg-slate-800 border py-3 px-4 border-slate-700 w-full rounded-lg text-white focus:outline-none focus:ring-1 focus:ring-slate-500 mt-2 mb-5"
             />
           </label>
-          <label className="text-slate-400 text-sm tracking-widest">
+          <label className="text-slate-400 text-sm tracking-widest block">
             MENSAJE
             <textarea
               rows="4"
               name="message"
               required
-              placeholder="¿En que puedo ayudarte?"
+              placeholder="¿En qué puedo ayudarte?"
               className="bg-slate-800 border py-3 px-4 border-slate-700 w-full rounded-lg text-white focus:outline-none focus:ring-1 focus:ring-slate-500 mt-2"
             />
           </label>
